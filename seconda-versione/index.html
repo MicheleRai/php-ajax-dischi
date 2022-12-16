@@ -26,7 +26,7 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
             <h1>DISCHI</h1>
         </header>
         <main class="container">
-            <div v-for="obj in albums" :key="obj" class="card">
+            <div v-for="obj in albums" :key="obj.i" class="card">
                 <img :src="obj.poster" alt="poster">
                 <h2>{{ obj.title }}</h2>
                 <div>{{ obj.author }}</div>
