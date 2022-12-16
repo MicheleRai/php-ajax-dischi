@@ -11,8 +11,14 @@ Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i disch
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DISCHI</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/style.css">
+    
 </head>
 <body>
-    
+    <?php
+    include __DIR__ . '/../includes/header.php';
+    include __DIR__ . '/../includes/mainPage.php';
+    ?>
 </body>
 </html>
