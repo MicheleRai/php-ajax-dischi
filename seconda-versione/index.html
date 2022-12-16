@@ -21,6 +21,17 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
     <script src="../assets/script.js" defer></script>
 </head>
 <body>
-    
+    <div id="app">
+        <header>
+            <h1>DISCHI</h1>
+        </header>
+        <main class="container">
+            <div v-for="obj in albums" :key="obj" class="card">
+                <img :src="obj.poster" alt="poster">
+                <h2>{{ obj.title }}</h2>
+                <div>{{ obj.author }}</div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
