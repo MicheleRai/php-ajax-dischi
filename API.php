@@ -2,7 +2,7 @@
 
 $genre = empty($_GET['genre']) ? 'all' : strtolower($_GET['genre']);
 
-include __DIR__ . '/../db/data.php';
+include __DIR__ . '/db/data.php';
 
 
 if ($genre == 'all') {

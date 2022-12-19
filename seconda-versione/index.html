@@ -24,7 +24,7 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
     <div id="app">
         <header>
             <h1>DISCHI</h1>
-            <select onchange="getList" name="genre" v-model="genre">
+            <select @change="getList" name="genre" v-model="genre">
                 <option value="all">All</option>
                 <option v-for="genre in genres" :key="genre" :value="genre">{{ genre }}</option>
             </select>
