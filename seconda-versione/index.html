@@ -24,9 +24,13 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
     <div id="app">
         <header>
             <h1>DISCHI</h1>
+            <select onchange="getList" name="genre" v-model="genre">
+                <option value="all">All</option>
+                <option v-for="genre in genres" :key="genre" :value="genre">{{ genre }}</option>
+            </select>
         </header>
         <main class="container">
-            <div v-for="obj in albums" :key="obj.i" class="card">
+            <div v-for="obj in discs" :key="obj.i" class="card">
                 <img :src="obj.poster" alt="poster">
                 <h2>{{ obj.title }}</h2>
                 <div>{{ obj.author }}</div>
